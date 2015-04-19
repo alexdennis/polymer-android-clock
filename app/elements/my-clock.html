@@ -1,0 +1,36 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<script type="text/javascript" src="../bower_components/moment/moment.js"></script>
+
+<polymer-element name="my-clock">
+  <template>
+    <style>
+      div {text-align: center;}
+      h1 {font-size: 5em; font-weight: 100;}
+      span {font-weight:500;}
+    </style>
+    <div>
+      <h1>{{time}}</h1>
+      <span>{{date}}</span>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      time: "",
+      date: "",
+      timer: null,
+      ready: function() {
+        this.tick();        
+      },
+      tick: function() {
+        this.time = moment().format("h:mm A");
+        this.date = moment().format("ddd, MMMM D");
+        console.log('tick');
+
+        var that = this;
+        this.timer = setTimeout(function() {
+          that.tick();
+        }, 500);
+      }
+    });
+  </script>
+</polymer-element>

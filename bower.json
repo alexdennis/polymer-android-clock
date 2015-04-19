@@ -1,0 +1,33 @@
+{
+  "name": "alarms",
+  "version": "0.0.0",
+  "authors": [
+    "Alex Dennis <alex.dennis@gmail.com>"
+  ],
+  "description": "Web version of Android Alarms",
+  "main": "app/index.html",
+  "keywords": [
+    "android"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.carltondennis.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5",
+    "core-icons": "Polymer/core-icons#~0.5.5",
+    "core-icon": "Polymer/core-icon#~0.5.5",
+    "core-icon-button": "Polymer/core-icon-button#~0.5.5",
+    "paper-button": "Polymer/paper-button#~0.5.5",
+    "paper-fab": "Polymer/paper-fab#~0.5.5",
+    "paper-tabs": "Polymer/paper-tabs#~0.5.5",
+    "core-elements": "Polymer/core-elements#~0.5.5",
+    "moment": "~2.10.2"
+  }
+}

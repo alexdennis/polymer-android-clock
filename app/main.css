@@ -1,0 +1,29 @@
+document, body {
+    background: #2196F3;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+#btn-add-alarm {
+    background-color: #FF4081;
+}
+
+core-toolbar {
+  background: #2196F3;  
+}
+
+top-nav::shadow paper-tabs::shadow #selectionBar {
+    background-color: #fff;
+}
+
+top-nav::shadow paper-tabs paper-tab::shadow #ink {
+  color: #fff;
+}
+
+top-nav::shadow core-icon {
+    color: #fff;
+}
+
+#bottom-nav {
+    padding: 10px;
+}
