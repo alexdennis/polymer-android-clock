@@ -8,6 +8,24 @@ core-toolbar {
   background: #2196F3;  
 }
 
+core-list {
+    height:100%;
+}
+
+core-list .alarm {
+    height: 100px;
+    padding: 16px;
+}
+
+core-list .alarm h1 {
+    font-weight: 100;
+    font-size: 4em;
+}
+
+core-list .alarm h1 span{
+    font-size: smaller;
+}
+
 top-nav::shadow paper-tabs::shadow #selectionBar {
     background-color: #fff;
 }

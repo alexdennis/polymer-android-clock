@@ -21,10 +21,19 @@
         <link rel="import" href="elements/elements.html">
     </head>
     <body fullbleed layout vertical>
-        <template is="auto-binding">
-            <top-nav selected={{selected}}></top-nav>
+        <template is="auto-binding" id="app">
+            <top-nav selected={{selected}}></top-nav>         
             <core-pages selected={{selected}} flex>
-                <section></section>
+                <section>
+                    <core-list data="{{data}}">
+                        <template>
+                            <div class="alarm" horizontal layout center>
+                                <h1 data-index="{{index}}" flex>{{model.time}}<span>{{model.meridian}}</span></h1>
+                                <paper-toggle-button></paper-toggle-button>
+                            </div>
+                        </template>
+                    </core-list>
+                </section>
                 <section>
                     <my-clock></my-clock>
                 </section>
@@ -33,6 +42,8 @@
             <div id="bottom-nav" horizontal layout center-justified>
                 <paper-fab id="btn-add-alarm" icon="add"></paper-fab>
             </div>          
-        </template>        
+        </template>       
+        <script type="text/javascript" src="../bower_components/moment/moment.js"></script>
+        <script type="text/javascript" src="/main.js" ></script>
     </body>
 </html>
