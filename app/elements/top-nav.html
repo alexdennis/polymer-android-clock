@@ -4,9 +4,9 @@
 <link rel="import" href="../bower_components/core-icons/device-icons.html">
 <link rel="import" href="../bower_components/core-icons/image-icons.html">
 
-<polymer-element name="top-nav" noscript>
+<polymer-element name="top-nav" attributes="selected">
   <template>
-    <paper-tabs selected="1" nobar="true">
+    <paper-tabs selected="{{selected}}" nobar="true">
       <paper-tab>
         <core-icon icon="alarm"></core-icon>
       </paper-tab>
@@ -18,4 +18,12 @@
       </paper-tab>
     </paper-tabs>
   </template>
+  <script>
+    Polymer({
+        selected: 1,
+        selectedChanged: function() {
+            console.log(this.selected);
+        }
+    });
+  </script>
 </polymer-element>

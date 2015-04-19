@@ -1,6 +1,6 @@
 {
-    "name": "Web Alarms",
-    "short_name": "Alarms",
+    "name": "Polymer Clock",
+    "short_name": "Clock",
     "start_url": "./?utm_source=web_app_manifest",
     "display": "standalone",
     "orientation": "portrait",

@@ -3,11 +3,6 @@
 
 <polymer-element name="my-clock">
   <template>
-    <style>
-      div {text-align: center;}
-      h1 {font-size: 5em; font-weight: 100;}
-      span {font-weight:500;}
-    </style>
     <div>
       <h1>{{time}}</h1>
       <span>{{date}}</span>
@@ -24,7 +19,7 @@
       tick: function() {
         this.time = moment().format("h:mm A");
         this.date = moment().format("ddd, MMMM D");
-        console.log('tick');
+        // console.log('tick');
 
         var that = this;
         this.timer = setTimeout(function() {

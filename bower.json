@@ -21,9 +21,6 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^0.5",
-    "core-icons": "Polymer/core-icons#~0.5.5",
-    "core-icon": "Polymer/core-icon#~0.5.5",
-    "core-icon-button": "Polymer/core-icon-button#~0.5.5",
     "paper-button": "Polymer/paper-button#~0.5.5",
     "paper-fab": "Polymer/paper-fab#~0.5.5",
     "paper-tabs": "Polymer/paper-tabs#~0.5.5",
