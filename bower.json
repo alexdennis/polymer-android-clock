@@ -1,10 +1,10 @@
 {
-  "name": "alarms",
+  "name": "alexdennis/polymer-android-clock",
   "version": "0.0.0",
   "authors": [
     "Alex Dennis <alex.dennis@gmail.com>"
   ],
-  "description": "Web version of Android Alarms",
+  "description": "Web Components version of Android Alarms",
   "main": "app/index.html",
   "keywords": [
     "android"
