@@ -4,7 +4,7 @@
   "authors": [
     "Alex Dennis <alex.dennis@gmail.com>"
   ],
-  "description": "Web Components version of Android Alarms",
+  "description": "Web Components version of Android Clock",
   "main": "app/index.html",
   "keywords": [
     "android"
