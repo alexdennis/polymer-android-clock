@@ -28,8 +28,10 @@
                     <core-list data="{{data}}">
                         <template>
                             <div class="alarm" horizontal layout center>
-                                <h1 data-index="{{index}}" flex>{{model.time}}<span>{{model.meridian}}</span></h1>
-                                <paper-toggle-button></paper-toggle-button>
+                                <h1 data-index="{{index}}" flex>
+                                    {{model.time}}<span>{{model.meridian}}</span>
+                                </h1>
+                                <paper-toggle-button checked={{model.enabled}}></paper-toggle-button>
                             </div>
                         </template>
                     </core-list>

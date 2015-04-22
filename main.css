@@ -26,6 +26,18 @@ core-list .alarm h1 span{
     font-size: smaller;
 }
 
+paper-toggle-button::shadow .toggle-ink {
+  color: #FF4081;
+}
+
+paper-toggle-button::shadow [checked] .toggle {
+  background-color: #FF4081;
+}
+
+paper-toggle-button::shadow [checked] .toggle-ink {
+  color: #FF4081;
+}
+
 top-nav::shadow paper-tabs::shadow #selectionBar {
     background-color: #fff;
 }
@@ -41,6 +53,10 @@ top-nav::shadow core-icon {
 my-clock::shadow div {text-align: center; }
 my-clock::shadow h1 {font-size: 5em; font-weight: 100; }
 my-clock::shadow span {font-weight:500;}
+
+.alarm {
+    width: 100%;
+}
 
 #btn-add-alarm {
     background-color: #FF4081;
